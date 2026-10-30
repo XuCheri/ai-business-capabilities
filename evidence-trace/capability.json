@@ -1,0 +1,7 @@
+{
+  "title": "知识库回答引用校验与证据追溯",
+  "category": "人工智能",
+  "granularity": "中粒度",
+  "tags": ["知识库问答", "证据追溯", "引用校验", "版本管理", "发布复核", "TypeScript"],
+  "cover": "../assets/evidence-trace-cover.png"
+}

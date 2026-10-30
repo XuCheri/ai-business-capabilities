@@ -1,0 +1,9 @@
+{
+  "name": "evidence-trace", "version": "1.0.0", "type": "module",
+  "description": "知识库回答引用校验与证据追溯：版本、引文锚点、来源权限、时效与人工复核分流。",
+  "main": "./dist/index.js", "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "src", "README.md", "capability.json", "publication"],
+  "scripts": { "build": "tsc -p tsconfig.json", "check": "tsc --noEmit -p tsconfig.json", "test": "npm run build && node --test tests/*.test.mjs", "demo": "npm run build && node scripts/serve.mjs", "demo:build": "npm run build && node scripts/build-demo.mjs" },
+  "engines": { "node": ">=18" }, "devDependencies": { "typescript": "5.9.3" }
+}

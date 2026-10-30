@@ -1,0 +1,21 @@
+{
+  "name": "action-gate",
+  "version": "1.0.0",
+  "description": "AI 工具调用风险预检、绑定参数的人工审批与单实例一次性执行许可。",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "README.md", "capability.json", "cover.png", "publication"],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "check": "tsc --noEmit",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "demo": "npm run build && node scripts/serve.mjs",
+    "demo:build": "npm run build && node scripts/build-demo.mjs"
+  },
+  "devDependencies": { "typescript": "5.9.3" },
+  "engines": { "node": ">=20.19" },
+  "license": "MIT"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ai-business-capabilities",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI 业务原子能力：回答引用校验与工具调用审批门控",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "setup": "npm ci --prefix evidence-trace && npm ci --prefix action-gate",
+    "build": "npm run build --prefix evidence-trace && npm run build --prefix action-gate",
+    "check": "npm run check --prefix evidence-trace && npm run check --prefix action-gate",
+    "test": "npm test --prefix evidence-trace && npm test --prefix action-gate",
+    "demo": "node scripts/serve.mjs"
+  }
+}

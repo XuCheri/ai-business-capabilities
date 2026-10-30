@@ -1,0 +1,7 @@
+{
+  "title": "AI 工具调用风险预检与审批门控",
+  "category": "AI 业务组件",
+  "granularity": "中粒度",
+  "tags": ["AI Agent", "工具调用", "人工审批", "租户隔离", "参数绑定", "审计日志", "TypeScript"],
+  "cover": "../assets/action-gate-cover.png"
+}
